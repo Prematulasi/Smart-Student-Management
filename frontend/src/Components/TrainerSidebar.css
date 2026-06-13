@@ -1,0 +1,488 @@
+.trainer-sidebar {
+  width: 260px;
+  height: 100vh;
+  background: #0f172a;
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar-logo h2 {
+  color: white;
+}
+
+.trainer-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.trainer-sidebar li {
+  margin-bottom: 12px;
+}
+
+.trainer-sidebar li a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.trainer-sidebar li a:hover {
+  background: #2563eb;
+}
+
+.trainer-sidebar li.active a {
+  background: #2563eb;
+}
+
+.logout-btn {
+  margin-top: auto;
+  border: none;
+  background: #ef4444;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.assessment-container{
+padding:30px;
+background:#f5f7fb;
+min-height:100vh;
+}
+
+.assessment-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:30px;
+}
+
+.assessment-header h1{
+color:#1e293b;
+}
+
+.create-btn{
+background:#2563eb;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:10px;
+cursor:pointer;
+font-size:15px;
+}
+
+.assessment-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.assessment-card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.assessment-card h3{
+margin-bottom:10px;
+color:#0f172a;
+}
+
+.assessment-card p{
+margin:8px 0;
+color:#64748b;
+}
+
+.view-btn{
+margin-top:15px;
+width:100%;
+padding:10px;
+background:#22c55e;
+border:none;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+/*courses*/
+.trainer-course-container{
+  min-height:100vh;
+  padding:40px;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+}
+
+.course-form-card{
+  width:100%;
+  max-width:900px;
+  background:#fff;
+  padding:35px;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.course-form-card h1{
+  margin-bottom:25px;
+  color:#1e293b;
+  font-size:32px;
+  font-weight:700;
+}
+
+.course-form-card form{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.course-form-card label{
+  font-size:15px;
+  font-weight:600;
+  color:#334155;
+}
+
+.course-form-card input,
+.course-form-card textarea{
+  width:100%;
+  padding:14px;
+  border:1px solid #dbe2ea;
+  border-radius:12px;
+  font-size:15px;
+  outline:none;
+  transition:0.3s;
+}
+
+.course-form-card input:focus,
+.course-form-card textarea:focus{
+  border-color:#2563eb;
+  box-shadow:0 0 0 3px rgba(37,99,235,0.15);
+}
+
+.course-form-card textarea{
+  min-height:140px;
+  resize:none;
+}
+
+.course-form-card input[type="file"]{
+  padding:10px;
+  background:#f8fafc;
+}
+
+.course-form-card button{
+  margin-top:10px;
+  background:#2563eb;
+  color:white;
+  border:none;
+  padding:15px;
+  border-radius:12px;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.course-form-card button:hover{
+  background:#1d4ed8;
+  transform:translateY(-2px);
+}
+
+.course-form-card button:active{
+  transform:translateY(0);
+}
+
+@media(max-width:768px){
+
+  .trainer-course-container{
+    padding:20px;
+  }
+
+  .course-form-card{
+    padding:25px;
+  }
+
+  .course-form-card h1{
+    font-size:24px;
+  }
+
+}.assessment-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
+}
+
+.assessment-header h1{
+  color:#1e293b;
+  font-size:32px;
+}
+
+.create-btn{
+  background:#2563eb;
+  color:white;
+  border:none;
+  padding:12px 20px;
+  border-radius:10px;
+  cursor:pointer;
+  font-size:15px;
+  font-weight:600;
+}
+
+.create-btn:hover{
+  background:#1d4ed8;
+}
+
+.create-assessment-card{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  margin-bottom:30px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.create-assessment-card h2{
+  margin-bottom:20px;
+  color:#1e293b;
+}
+
+.create-assessment-card form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.create-assessment-card input,
+.create-assessment-card textarea{
+  padding:14px;
+  border:1px solid #dbe2ea;
+  border-radius:10px;
+  font-size:15px;
+  outline:none;
+}
+
+.create-assessment-card textarea{
+  min-height:120px;
+  resize:none;
+}
+
+.create-assessment-card input:focus,
+.create-assessment-card textarea:focus{
+  border-color:#2563eb;
+}
+
+.create-assessment-card button{
+  background:#22c55e;
+  color:white;
+  border:none;
+  padding:14px;
+  border-radius:10px;
+  cursor:pointer;
+  font-size:15px;
+  font-weight:600;
+}
+
+.create-assessment-card button:hover{
+  background:#16a34a;
+}
+
+.assessment-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:20px;
+}
+
+.assessment-card{
+  background:white;
+  padding:25px;
+  border-radius:20px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+  transition:.3s;
+}
+
+.assessment-card:hover{
+  transform:translateY(-5px);
+}
+
+.assessment-card h3{
+  margin-bottom:10px;
+  color:#1e293b;
+}
+
+.assessment-card p{
+  margin:8px 0;
+  color:#64748b;
+}
+
+.view-btn{
+  width:100%;
+  margin-top:15px;
+  background:#2563eb;
+  color:white;
+  border:none;
+  padding:12px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.view-btn:hover{
+  background:#1d4ed8;
+}
+
+.details-card{
+  margin-top:30px;
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.details-card h2{
+  margin-bottom:15px;
+  color:#1e293b;
+}
+
+.details-card h3{
+  margin-bottom:15px;
+  color:#2563eb;
+}
+
+.details-card p{
+  margin:12px 0;
+  color:#475569;
+  font-size:15px;
+}
+
+.details-card button{
+  margin-top:20px;
+  background:#ef4444;
+  color:white;
+  border:none;
+  padding:12px 20px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.details-card button:hover{
+  background:#dc2626;
+}
+
+@media(max-width:768px){
+
+  .assessment-header{
+    flex-direction:column;
+    gap:15px;
+    align-items:flex-start;
+  }
+
+  .assessment-grid{
+    grid-template-columns:1fr;
+  }
+
+  .assessment-container{
+    padding:15px;
+  }
+
+}
+/*profile*/
+.trainer-profile-container{
+  min-height:100vh;
+  background:#f5f7fb;
+  padding:30px;
+  display:flex;
+  justify-content:center;
+}
+
+.profile-card{
+  width:100%;
+  max-width:900px;
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.profile-header{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.profile-header img{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  border:5px solid #2563eb;
+  margin-bottom:15px;
+}
+
+.profile-header h2{
+  color:#1e293b;
+  margin-bottom:5px;
+}
+
+.profile-header p{
+  color:#64748b;
+}
+
+.form-group{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:18px;
+}
+
+.form-group label{
+  margin-bottom:8px;
+  font-weight:600;
+  color:#334155;
+}
+
+.form-group input,
+.form-group textarea{
+  padding:14px;
+  border:1px solid #dbe2ea;
+  border-radius:10px;
+  font-size:15px;
+}
+
+.form-group textarea{
+  min-height:120px;
+  resize:none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+  outline:none;
+  border-color:#2563eb;
+}
+
+.profile-card button{
+  width:100%;
+  background:#2563eb;
+  color:white;
+  border:none;
+  padding:14px;
+  border-radius:10px;
+  font-size:16px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.profile-card button:hover{
+  background:#1d4ed8;
+}
