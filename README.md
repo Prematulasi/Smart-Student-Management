@@ -110,51 +110,7 @@ The application enables students to access learning resources, take assessments,
 * Postman
 
 ---
-📂 Project Structure
-Smart-Student-Management/
-│
-├── backend/
-│   ├── config/
-│   │   └── db.js                 # MongoDB Connection
-│   │
-│   ├── middleware/               # Authentication Middleware
-│   │
-│   ├── models/
-│   │   ├── User.js
-│   │   ├── Course.js
-│   │   ├── Assessment.js
-│   │   ├── AssessmentResult.js
-│   │   └── Job.js
-│   │
-│   ├── routes/
-│   │   ├── authRoutes.js
-│   │   ├── courseRoutes.js
-│   │   ├── assessmentRoutes.js
-│   │   ├── resultRoutes.js
-│   │   └── jobRoutes.js
-│   │
-│   ├── .env
-│   ├── package.json
-│   └── server.js
-│
-├── frontend/
-│   ├── public/
-│   │
-│   ├── src/
-│   │   ├── Assets/
-│   │   ├── Components/
-│   │   ├── Pages/
-│   │   ├── CSS/
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   └── index.css
-│   │
-│   ├── package.json
-│   └── vite.config.js
-│
-├── README.md
-└── .gitignore
----
+
 
 # 📚 Modules Implemented
 
