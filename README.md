@@ -271,6 +271,3 @@ Through this project, I gained practical experience in:
 * Git & GitHub Version Control
 
 
----
-
-**Developed with ❤️ using the MERN Stack.**
